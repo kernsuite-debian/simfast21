@@ -2,7 +2,7 @@ Source: simfast21
 Section: science
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), libfftw3-dev, libgsl0-dev
 Standards-Version: 3.9.8
 Homepage: https://github.com/mariogrs/Simfast21
 Vcs-Git: git://github.com/kernsuite-debian/simfast21-debian.git

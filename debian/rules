@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
+override_dh_auto_clean:
+	rm -rf *.o *.x tools/*.o tools/*.x
+
 %:
 	dh $@ --parallel
