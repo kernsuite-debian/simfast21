@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/simfast21-$1\.tar\.gz/ \
+  https://github.com/mariogrs/Simfast21/tags .*/v?(\d\S*)\.tar\.gz

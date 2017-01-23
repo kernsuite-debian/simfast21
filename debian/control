@@ -1,0 +1,19 @@
+Source: simfast21
+Section: science
+Priority: extra
+Maintainer: Gijs Molenaar <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.8
+Homepage: https://github.com/mariogrs/Simfast21
+Vcs-Git: git://github.com/kernsuite-debian/simfast21-debian.git
+Vcs-Browser: http://github.com/kernsuite-debian/simfast21
+
+Package: simfast21
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: generates a simulation of the cosmological 21cm signal
+ We explore the impact of incorporating physically motivated ionisation and
+ recombination rates on the history and topology of cosmic reionisation, by
+ incorporating inputs from small-volume hydrodynamic simulations into a
+ semi-numerical code, SimFast21, that evolves reionisation on large scales. 
+
