@@ -1,3 +1,9 @@
+simfast21 (2.0.1~beta-1kern1) bionic; urgency=medium
+
+  * New upstream version 2.0.1~beta
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 29 May 2018 09:59:53 +0000
+
 simfast21 (2.0~beta-1kern2) bionic; urgency=medium
 
   * New upstream release for bionic
