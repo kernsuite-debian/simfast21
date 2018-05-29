@@ -1,48 +1,45 @@
-#!/bin/bash
 
 echo
 echo SimFast21 v1.5
 echo Generating the simulation in directory: $1
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 echo
 echo ------------------------------------------ Density Field ------------------------------------------
-${DIR}/get_densityfield.x $1
+./get_densityfield.x $1
 echo
 echo ------------------------------------------ Halos ------------------------------------------
-${DIR}/get_halos.x $1 
+./get_halos.x $1 
 echo
 echo ------------------------------------------ velocity field ------------------------------------------
-${DIR}/get_velocityfield.x $1
+./get_velocityfield.x $1
 echo
 echo ------------------------------------------ Nonlinear density field ------------------------------------------
-${DIR}/get_nldensity.x $1  
+./get_nldensity.x $1  
 echo
 echo ------------------------------------------ Adjusted halo box ------------------------------------------
-${DIR}/adjust_halos.x $1 
+./adjust_halos.x $1 
 echo
 echo ------------------------------------------ Ionization fraction ------------------------------------------
-${DIR}/get_HIIbubbles.x $1
+./get_HIIbubbles.x $1
 echo
 echo ------------------------------------------ Star Formation Rate ------------------------------------------
-${DIR}/get_SFR.x $1         
+./get_SFR.x $1         
 echo
 echo ------------------------------------------ Epsilon over n ------------------------------------------
-${DIR}/epsilonXon.x $1      
+./epsilonXon.x $1      
 echo
 echo ------------------------------------------ IGM xe ------------------------------------------
-${DIR}/integratexe.x $1
+./integratexe.x $1
 echo
 echo ------------------------------------------ Xrays Temperature ------------------------------------------ 
-${DIR}/integrateTempX.x $1  
+./integrateTempX.x $1  
 echo
 echo ------------------------------------------ xalpha ------------------------------------------
-${DIR}/xalpha.x $1
+./xalpha.x $1
 echo
 echo ------------------------------------------ xc ------------------------------------------
-${DIR}/xc.x $1
+./xc.x $1
 echo
 echo ------------------------------------------ 21cm brightness temperature ------------------------------------------
-${DIR}/t21.x $1
+./t21.x $1
 echo
